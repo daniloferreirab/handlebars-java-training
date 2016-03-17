@@ -4,6 +4,7 @@ public class ExampleView {
 	
 	private String title;
 	private String paragraph;
+	private String type;
 	
 	public ExampleView(){}
 	
@@ -18,6 +19,14 @@ public class ExampleView {
 	}
 	public void setParagraph(String paragraph) {
 		this.paragraph = paragraph;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String test) {
+		this.type = test;
 	}
 	
 	
