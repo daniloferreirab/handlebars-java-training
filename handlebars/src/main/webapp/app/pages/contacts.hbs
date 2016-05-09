@@ -1,0 +1,16 @@
+<h1>Lista de Contactos</h1>
+<title>{{titulo}}</title>
+<table>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Direccion</th>
+<th>Genero</th>
+{{#each contactList}}
+<tr>
+	<td>{{nombre}}</td>
+	<td>{{edad}}</td>
+	<td>{{direccion}}</td>
+	<td>{{genero}}</td>
+	</tr>
+{{/each}}
+</table>
