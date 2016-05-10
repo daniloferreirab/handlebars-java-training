@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="/handlebars/app/css/main.css">
+</head>
+<title>{{titulo}}</title>
+<h1>Lista de Contactos</h1>
+<body>
+<div class="container">
+<table>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Direccion</th>
+<th>Genero</th>
+{{#each contactList}}
+<tr>
+	<td>{{nombre}}</td>
+	<td>{{edad}}</td>
+	<td>{{direccion}}</td>
+	<td>{{genero}}</td>
+	</tr>
+{{/each}}
+</table>
+</div>
+</body>
+</html>
