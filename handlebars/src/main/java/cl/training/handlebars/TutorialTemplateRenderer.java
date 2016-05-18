@@ -17,7 +17,9 @@ import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Template;
 import com.github.jknack.handlebars.io.ServletContextTemplateLoader;
 
+import cl.training.handlebars.helpers.CustomBlockHelper;
 import cl.training.handlebars.helpers.IsHandlebarsHelper;
+import cl.training.handlebars.helpers.RegisterBlockHandleBarsHelper;
 
 final public class TutorialTemplateRenderer {
 	private static TutorialTemplateRenderer instance;
@@ -38,6 +40,8 @@ final public class TutorialTemplateRenderer {
 	
 	private void registerHelpers(){
 		helpers.add(new IsHandlebarsHelper());
+		helpers.add(new CustomBlockHelper());
+		helpers.add(new RegisterBlockHandleBarsHelper());
 	}
 	private TutorialTemplateRenderer(){
 		this.hbs = new Handlebars();
